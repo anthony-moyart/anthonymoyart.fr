@@ -1,10 +1,85 @@
-body {
-  font-size: 16px;
-  font-family: "Helvetica Neue", Tahoma, sans-serif;
-  color: #203040;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'variables';
+@import 'list';
 
 body,html {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", "San Francisco", Tahoma, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
+  color: $textColor;
+  background-color: $lightWhite;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 0;
+  margin: 2.625rem 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  padding: 0;
+  margin: 1rem;
+  color: $primaryColor;
+
+  .dark-bg & {
+    color: $secondaryColor;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 1rem;
+}
+
+h4 {
+  font-size: .875rem;
+  font-family: "Charter B", "Charter", serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: .75rem;
+}
+
+a {
+  &, &:visited {
+    color: $primaryColor;
+  }
+
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+}
+
+.small-text {
+  font-size: 0.75rem;
+}
+
+.dark-bg {
+  background: $textColor;
+  color: white;
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gutter;
+}
+

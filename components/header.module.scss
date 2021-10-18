@@ -1,0 +1,73 @@
+@import "../styles/variables";
+@import "../styles/list";
+
+.wrapper {
+  display: flex;
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+
+  .nav {
+    @extend .list--inline, .list--unstyled;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    gap: 3rem;
+
+    li {
+      font-size: 1.25rem;
+      align-self: center;
+
+      a {
+        position: relative;
+        color: $textColor;
+        text-decoration: none;
+
+        &::after {
+          content: ' ';
+          position: absolute;
+          left: 50%;
+          bottom: -.25rem;
+          width: 0;
+          height: 1px;
+          border-bottom: 1px solid $textColor;
+          transition-property: left, width;
+          transition-duration: 140ms;
+          transition-timing-function: ease-out;
+        }
+
+        &:hover {
+          &::after {
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+
+      &.active a {
+        color: $primaryColor;
+
+        &::after {
+          border-color: $primaryColor;
+        }
+      }
+    }
+
+
+  }
+
+  .logos {
+    @extend .list--inline, .list--unstyled;
+
+    display: flex;
+    gap: 2rem;
+
+    li {
+      align-self: center;
+
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
