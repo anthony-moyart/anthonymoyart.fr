@@ -17,15 +17,15 @@ function SkillCard(props: { skill: Skill }) {
         </div>
 
         <ul className={styles.skillsList}>
-            {skill.skills.map(it => <li>
-                {it.name}
+            { skill.skills.map(it => <li key={ it.name }>
+                { it.name }
 
-                {it.subSkills ? <ul className={styles.subSkillsList}>
+                { it.subSkills ? <ul className={ styles.subSkillsList }>
                     { it.subSkills.map(subSkill => <li key={ subSkill }>
                         { subSkill }
                     </li>) }
-                </ul> : <></>}
-            </li>)}
+                </ul> : <></> }
+            </li>) }
         </ul>
     </div>
 }
