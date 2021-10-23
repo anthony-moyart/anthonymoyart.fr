@@ -72,7 +72,7 @@ const skills: Skill[] = [
         skills: [
             {
                 name: 'MongoDB',
-                subSkills: ['TODO'],
+                subSkills: ['Split de données sur plusieurs collections', 'Indexes', 'Aggregates', 'Partial updates'],
             },
             {
                 name: 'Git',
