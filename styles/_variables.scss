@@ -5,3 +5,9 @@ $lightWhite: #F8F8F8;
 
 $gutter: 2rem;
 $containerWidth: 12 * 3.75rem + 11 * $gutter;
+
+$breakpoints: (
+    mobile: 42rem,
+    tablet: 60rem,
+    desktop: 81rem,
+)
