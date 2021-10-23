@@ -56,7 +56,7 @@ export default function Footer() {
                 <h4>Autres</h4>
                 <ul className="list--unstyled">
                     <li>
-                        <a href="/legals">Mentions légales</a>
+                        <Link href="/legals">Mentions légales</Link>
                     </li>
                 </ul>
             </div>
