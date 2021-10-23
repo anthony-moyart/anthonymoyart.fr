@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './header.module.scss';
-import { routes } from '../utils/links';
+import { links, routes } from '../utils/links';
 import { useRouter } from 'next/router';
 
 export default function Header() {
@@ -25,17 +25,25 @@ export default function Header() {
         </ul>
 
         <ul className={ styles.logos }>
-            <img
-                src="/logo-malt.png"
-                srcSet="/logo-malt@2x.png 2x"
-                alt="Malt"
-            />
+            <li>
+                <a href={ links.socials.malt }>
+                    <img
+                        src="/logo-malt.png"
+                        srcSet="/logo-malt@2x.png 2x"
+                        alt="Malt"
+                    />
+                </a>
+            </li>
 
-            <img
-                src="/logo-github.png"
-                srcSet="/logo-github@2x.png 2x"
-                alt="GitHub"
-            />
+            <li>
+                <a href={ links.socials.github }>
+                    <img
+                        src="/logo-github.png"
+                        srcSet="/logo-github@2x.png 2x"
+                        alt="GitHub"
+                    />
+                </a>
+            </li>
         </ul>
     </header>
 }
