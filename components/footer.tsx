@@ -38,7 +38,7 @@ export default function Footer() {
                 <h4>Où me trouver</h4>
                 <ul className="list--unstyled">
                     { whereToFindMe.map(it => <li key={ it.link }>
-                        <a href={ it.link }>{ it.type }: { it.label }</a>
+                        <a href={ it.link } target="_blank">{ it.type }: { it.label }</a>
                     </li>) }
                 </ul>
             </div>
