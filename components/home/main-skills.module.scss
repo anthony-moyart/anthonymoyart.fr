@@ -18,6 +18,7 @@
 
   @include mobile {
     margin-bottom: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -36,6 +37,10 @@
     font-size: 2.25rem;
 
     line-height: 1;
+
+    @include mobile {
+      font-size: 1.7rem;
+    }
   }
 
   ul {
@@ -45,6 +50,10 @@
   .skillsList {
     font-size: 1.25rem;
     margin-top: 1.5rem;
+
+    @include mobile {
+      margin-top: 1.2rem;
+    }
 
     > li {
       margin-top: 1.25rem;
