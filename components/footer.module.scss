@@ -1,0 +1,15 @@
+@import "../styles/variables";
+
+.wrapper {
+  padding: 3.5rem 0;
+
+  a {
+    &, &:visited {
+      color: $lightWhite;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
