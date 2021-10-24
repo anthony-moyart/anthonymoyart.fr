@@ -1,5 +1,6 @@
 @import "../styles/variables";
 @import "../styles/list";
+@import "../styles/utils";
 
 .wrapper {
   display: flex;
@@ -65,8 +66,15 @@
     li {
       align-self: center;
 
-      width: 3rem;
-      height: 3rem;
+      &, a img {
+        width: 3rem;
+        height: 3rem;
+
+        @include mobile {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
     }
   }
 }
