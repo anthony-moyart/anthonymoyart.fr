@@ -15,8 +15,6 @@ export default function Header() {
         return path === router.pathname;
     };
 
-    console.log(router.pathname);
-
     return <header className={ `${ styles.wrapper } container` }>
         <ul className={ styles.nav }>
             { Object.keys(routes).map(it => <li key={ it } className={ isActive(it) ? styles.active : null }>
