@@ -33,6 +33,11 @@
     gap: calc(#{$gutter} / 2);
   }
 
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   li {
     background: white;
     border-radius: 100rem;
