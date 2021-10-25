@@ -7,19 +7,19 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: calc(map-get($breakpoints, mobile) + 1px)) and (max-width: map-get($breakpoints, tablet)) {
+  @media screen and (min-width: calc(map-get($breakpoints, mobile) + 0.01rem)) and (max-width: map-get($breakpoints, tablet)) {
     @content
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: calc(map-get($breakpoints, tablet) + 1px)) and (max-width: map-get($breakpoints, desktop)) {
+  @media screen and (min-width: calc(map-get($breakpoints, tablet) + 0.01rem)) and (max-width: map-get($breakpoints, desktop)) {
     @content
   }
 }
 
 @mixin large {
-  @media screen and (min-width: calc(map-get($breakpoints, desktop) + 1px)) {
+  @media screen and (min-width: calc(map-get($breakpoints, desktop) + 0.01rem)) {
     @content
   }
 }
