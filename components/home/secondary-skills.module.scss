@@ -30,7 +30,6 @@
 
   @include mobile {
     display: grid;
-    grid-template-columns: 1fr;
     gap: calc(#{$gutter} / 2);
   }
 
