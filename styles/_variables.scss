@@ -4,7 +4,8 @@ $textColor: #273949;
 $lightWhite: #F8F8F8;
 
 $gutter: 2rem;
-$containerWidth: 12 * 3.75rem + 11 * $gutter;
+$containerWidth: 12 * 3rem + 11 * $gutter;
+$largeContainerWidth: 12 * 3.75rem + 11 * $gutter;
 
 $breakpoints: (
     mobile: 42rem,

@@ -77,17 +77,17 @@ a {
 }
 
 .container {
-  width: $containerWidth;
-  margin: 0 auto;
+  max-width: calc(100vw - 2rem);
+  margin: 0 1rem;
 
-  @include mobile {
-    max-width: calc(100vw - 2rem);
-    margin: 0 1rem;
+  @include desktop {
+    width: $containerWidth;
+    margin: 0 auto;
   }
 
-  @include tablet {
-    max-width: calc(100vw - 2rem);
-    margin: 0 1rem;
+  @include large {
+    width: $largeContainerWidth;
+    margin: 0 auto;
   }
 }
 
